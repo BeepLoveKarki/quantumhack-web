@@ -4804,10 +4804,11 @@ section.pull-up {
 
 
 #devfolio-apply-now {
+  vertical-align: middle;
   -ms-flex-align: center;
   -webkit-box-align: center;
   align-items: center;
-  background-color: #3770FF;
+  background-color: #4a90e2;
   border-radius: 3px;
   border: none;
   color: #FFFFFF;
@@ -4820,7 +4821,6 @@ section.pull-up {
   font-weight: 600;
   padding: 12px 20px;
   text-align: center;
-  text-transform: lowercase;
 }
 
 #devfolio-apply-now:not([disabled]) {
@@ -4828,5 +4828,5 @@ section.pull-up {
 }
 
 #devfolio-apply-now:hover {
-  background-color: #2954BF !important;
+  background-color: #4a90e2 !important;
 }
