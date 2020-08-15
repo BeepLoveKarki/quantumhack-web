@@ -4869,3 +4869,26 @@ section.pull-up {
   background-color: white;
   overflow: hidden;
 }
+
+.discordButton {
+	background:linear-gradient(to bottom, #4a90e2 5%, #4a90e2 100%);
+	background-color:#4a90e2;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:11px 32px;
+	text-decoration:none;
+	text-shadow:2px 1px 0px #4a90e2;
+}
+.discordButton:hover {
+	background:linear-gradient(to bottom, #4a90e2 5%, #4a90e2 100%);
+	background-color:#4a90e2;
+}
+.discordButton:active {
+	position:relative;
+	top:1px;
+}
