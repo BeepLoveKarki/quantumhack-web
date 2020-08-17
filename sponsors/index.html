@@ -7,6 +7,8 @@
 <!--<![endif]-->
 
 <head>
+  <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -81,10 +83,10 @@
           <ul class="nav navbar-nav font-family-alt letter-spacing-1 text-uppercase font-weight-700">
             <li><a href="/" class="line-height-unset">About</a></li>
             <li><a href="/prizes/index.html" class="page-scroll">Prizes</a></li>
-            <li><a href="/our-team/index.html" class="line-height-unset">Our Team</a></li>
             <li><a href="#page-top" class="page-scroll">Sponsors</a></li>
             <li><a href="/partners/index.html" class="line-height-unset">Partners</a></li>
             <li><a href="/faqs/index.html" class="line-height-unset">faqs</a></li>
+            <li><a href="/our-team/index.html" class="line-height-unset">Our Team</a></li>
             <li><a href="/contact/index.html" class="line-height-unset">Contact Us</a></li>
             <li class="bg-base-color">
               <a href="/register/index.html" class="line-height-unset width-100">
@@ -199,18 +201,18 @@
           <h3 class="font-family-alt font-weight-700 letter-spacing-1 xs-title-small title-medium">
             General Sponsors
           </h3>
-          <div class="row margin-2">
+          <div class="row margin-1">
             
-            <a target="_blank" href="https://1password.com/"><img src="../res/images/sponsors/1password.png" style="border:0px;margin:0px;float:left;width:150px;" alt="1Password"></a>
+            <a target="_blank" href="https://1password.com/"><img src="../res/images/sponsors/1password.png" style="border:0px;margin-top:100px;margin-right: 10px;float:left;width:120px;" alt="1Password"></a>
             <a target="_blank" href="https://balsamiq.com/"><img src="../res/images/sponsors/balsamiq.png" style="border:0px;margin:10px;clear:both;width:150px;" alt="Italian Trulli"></a>
             <a target="_blank" href="https://www.clerky.com/"><img src="../res/images/sponsors/clerky.png" style="border:0px;margin:10px;clear:both;width:200px;"alt="Clerky"></a>
             <a target="_blank" href="https://egghead.io/"><img src="../res/images/sponsors/egghead.jpg" style="border:0px;margin:10px;clear:both;width:150px;" alt="EggHead"></a>
             <a target="_blank" href="https://www.wolframalpha.com/"><img src="../res/images/sponsors/wolfram.png" style="border:0px;margin:10px;clear:both;width:150px;" alt="Wolfram"></a>
             <a target="_blank" href="https://gen.xyz/"><img src="../res/images/sponsors/xyz.png" style="border:0px;margin:10px;clear:both;width:150px;" alt=".XYZ"></a>
-            <a target="_blank" href="https://www.echoar.xyz/"><img src="../res/images/sponsors/echoar.jpeg" style="border:0px;margin:10px;clear:both;width:150px;" alt="EchoAR"></a>
+            <a target="_blank" href="https://www.echoar.xyz/"><img src="../res/images/sponsors/echoar.png" style="border:0px;margin:10px;clear:both;width:150px;" alt="EchoAR"></a>
             <a target="_blank" href="https://www.bugsee.com/"><img src="../res/images/sponsors/bugsee.png" style="border:0px;margin:10px;clear:both;width:150px;" alt="Bugsee"></a>
-            <a target="_blank" href="https://www.bugsee.com/"><img src="../res/images/sponsors/avure.jpg" style="border:0px;margin:10px;clear:both;width:150px;" alt="Bugsee"></a>
-            <a target="_blank" href="https://www.bugsee.com/"><img src="../res/images/sponsors/taskade.png" style="border:0px;margin:10px;clear:both;width:150px;" alt="Bugsee"></a>
+            <a target="_blank" href="https://www.axure.com/"><img src="../res/images/sponsors/avure.jpg" style="border:0px;margin:10px;clear:both;width:150px;" alt="Bugsee"></a>
+            <a target="_blank" href="https://www.taskade.com/"><img src="../res/images/sponsors/taskade.png" style="border:0px;margin:10px;clear:both;width:150px;" alt="Bugsee"></a>
           </div>
           <!-- //.row -->
 
@@ -344,6 +346,32 @@
   <!-- //Section - Parallax banner end -->
 
 
+  <section id="alumni" class="bg-white">
+    <div class="container">
+      <div class="row no-padding-rl">
+        <div class="col-sm-12 col-sm-offset-0">
+          <h2 class="font-family-alt font-weight-700 sm-title-large title-extra-large-2 text-gray-dark-2">
+            Subscribe to QuantumHack
+          </h2>
+          <br>
+          <form action="https://send.pageclip.co/VZw2DW9U8bDzWNvpOT3qtGGg0HDNMxUN/subscription" class="pageclip-form" method="post">
+            <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
+            <input type="text" name="name" placeholder="Your Name" />
+            <input type="email" name="email" placeholder="Your Email" />
+          
+            <!-- This button will have a loading spinner. Keep the inner span for best results. -->
+            <button type="submit" class="pageclip-form__submit">
+              <span>Send</span>
+            </button>
+          </form>
+
+        </div>
+        <!-- //.col-md-10 -->
+      </div>
+      <!-- //.row -->      
+    </div>
+    <!-- //.container -->
+  </section>
 
  <!-- Footer Start -->
  <footer class="footer bg-white">
@@ -433,6 +461,15 @@
   <!-- Countdown -->
   <script src="../res/js/jquery.countdown.min.js"></script>
   <script src="../res/js/countdown.js"></script>
+  <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+  <script>
+    var form = document.querySelector('.pageclip-form')
+    Pageclip.form(form, {
+      onSubmit: function (event) { },
+      onResponse: function (error, response) { },
+      successTemplate: '<h2>Thank you for subscribing!</h2>'
+    })
+  </script>
 
 </body>
 
